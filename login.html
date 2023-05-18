@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <form onsubmit="handleSubmit(event)">
+                <h1>Log In</h1>
+                <div class="element">
+                    <p>Username</p>
+                    <input id="username" type="text" placeholder="username">
+                </div>
+                
+                <div class="element">
+                    <div class="pass">
+                        <p>Password</p>
+                        <a href="#">Forgot Password ?</a>
+                    </div>
+                    <input id="password" type="password" placeholder="password">
+                </div>
+                <div class="center">
+                    <button type="submit">LOGIN IN</button>
+                </div>
+
+                <p style="text-align: center;">or continue with</p>
+                <div class="social-media">
+                    <button class="sc">
+                        <img src="https://cdn-teams-slug.flaticon.com/google.jpg" alt="">
+                    </button>
+                    <button class="sc">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="">
+                    </button>
+                    <button class="sc">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
+                            alt="">
+                    </button>
+                </div>
+                <div class="center-texts">
+                    <p>Don't have an account yet?</p>
+                    <a href="#">Sign up for free</a>
+                </div>
+
+            </form>
+        </div>
+        <div class="image-wrapper">
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="top">
+                <div class="top1">
+                    <div class="center">
+                        <img src="img2.png" alt="">
+                    </div>
+                </div>
+                <div class="top2">
+                    <i class="fa fa-house"></i>
+                    <i class="fa fa-bell"></i>
+                    <i class="fa fa-folder"></i>
+                    <i class="fa fa-arrow-trend-up"></i>
+                    <i class="fa fa-user"></i>
+                </div>
+            </div>
+            <div class="bottom">
+                <i class="fa fa-gear"></i>
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="left">
+                <div class="top">
+                    <div class="top1">
+                        <div class="center">
+                            <i class="fa fa-arrow-left"></i>
+                            <span>Settings</span>
+                        </div>
+                    </div>
+                    <div class="top2">
+                        <div class="content">
+                            <i class="fa fa-pen-to-square"></i>
+                            <span>Edit profile</span>
+                        </div>
+                        <div class="content">
+                            <i class="fa fa-bell"></i>
+                            <span>Notification</span>
+                        </div>
+                        
+                        <div class="content">
+                            <i class="fa fa-lock"></i>
+                            <span>Security</span>
+                        </div>
+                        
+
+                        <div class="content">
+                            <i class="fa fa-gear"></i>
+                            <span>Appearance</span>
+                        </div>
+                       
+
+                        <div class="content">
+                            <i class="fa fa-circle-question"></i>
+                            <span>Help</span>
+                        </div>
+                        
+                    </div>
+                </div> 
+            </div>
+            <div class="right">
+               <div class="header">
+                    <h2>Edit profile</h2>
+                    <div class="img-wrapper">
+                        <p id="username"></p>
+                        <img src="avatar.png" alt="">
+                    </div>
+               </div>
+               <div class="body">
+                    <form action = "#">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <label for="fname">First Name</label>
+                                        <input type="text" placeholder="Vinh">
+                                    </td>
+                                    <td>
+                                        <label for="lname">Last Name</label>
+                                        <input type="text" placeholder="Duong">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <label for="email">Email</label>
+                                        <div id="email">
+                                            <input type="text" placeholder="example@gmail.com">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <label for="address">Address</label>
+                                        <input type="text" placeholder="135 hai ba trung">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <label for="contact">Contact Number</label>
+                                        <input type="text" placeholder="01234567">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="city">City</label>
+                                        <select name="city">
+                                            <option value="vietnam">Vietnam</option>
+                                            <option value="india">India</option>
+                                            <option value="china">China</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                           <tfoot>
+                            <tr>
+                                <td>
+                                    <button type="reset">Cancel</button>
+                                    <button id = "saveBtn" type="submit">Save</button>
+                                </td>
+                                <td></td>
+                            </tr>
+                           </tfoot>
+                        </table>
+                    </form>
+               </div>
+            </div>    
+        </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
