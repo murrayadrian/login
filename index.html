@@ -75,10 +75,11 @@
                     <div class="img-wrapper">
                         <p id="username"></p>
                         <img src="avatar.png" alt="">
+                        <div class="logout" style="display: none;">Logout</div>
                     </div>
                </div>
                <div class="body">
-                    <form action = "#">
+                    <form onsubmit="handleSubmit(event)">
                         <table>
                             <tbody>
                                 <tr>
@@ -96,6 +97,8 @@
                                         <label for="email">Email</label>
                                         <div id="email">
                                             <input type="text" placeholder="example@gmail.com">
+                                            <div id="valid-icon"></div>
+                                            <div id="invalid-icon"></div>
                                         </div>
                                     </td>
                                 </tr>

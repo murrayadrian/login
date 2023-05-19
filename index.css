@@ -48,18 +48,25 @@ img{
 }
 .img-wrapper {
     display: flex;
+    position: relative;
     align-items: center;
     gap: 20px;
-    background-color: aqua;
     padding: 5px;
-    pointer-events: none;
 }
 .img-wrapper img {
-    pointer-events: auto;
     cursor: pointer;
 }
-.img-wrapper:hover{
+.logout {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    right: -20px;
+    top: 58px;
+    z-index: 10;
     background-color: red;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
 }
 
 .top2{
@@ -163,17 +170,27 @@ td{
 #email {
     position: relative;
 }
-#email::after{
-    content: "";
+
+#valid-icon {
     position: absolute;
-    background-image: url("https://www.shutterstock.com/image-vector/check-mark-vector-icon-paper-260nw-234317365.jpg");
-    background-size: 15px 15px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: greenyellow;
+    right: 10px;
+    top:5px;
     width: 30px;
     height: 30px;
-    right: 5px;
-    top: 5px;
-    bottom: 5px;
+    background-image: url("https://png.pngtree.com/png-clipart/20190516/original/pngtree-check-mark-icon-design-template-vector-isolated-png-image_4085369.jpg");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+}
+#invalid-icon {
+    position: absolute;
+    right: 10px;
+    top:5px;
+    width: 30px;
+    height: 30px;
+    background-image: url("https://w7.pngwing.com/pngs/28/52/png-transparent-button-computer-icons-cancel-button-logo-sign-internet-thumbnail.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
